@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Gun : MonoBehaviour
+protected class Gun : MonoBehaviour
 {
     public Rigidbody ammoPrefab;
     public GameObject shootingPoint;

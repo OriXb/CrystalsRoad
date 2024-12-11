@@ -4,30 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public abstract class GunInfo : MonoBehaviour
-{
-    Rigidbody ammoPrefab;
-    GameObject shootingPoint;
-
-    bool reloadWait = false;
-    int maxAmmos;
-    bool reloading;
-    Text ammoAmount;
-    int shottingPower;
-    float delay;
-    float reload;
-    bool canShoot = true;
-    int ammos;
-    bool isPlayerGun = false;
-    Animator animator;
-    bool isAiming = false;
-    string toolID;
-
-    AudioSource audioSource;
-    AudioClip reloadSound;
-    AudioClip shotSound;
-}
-public class Gun : GunInfo
+public class Gun : MonoBehaviour
 {
     public Rigidbody ammoPrefab;
     public GameObject shootingPoint;
